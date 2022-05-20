@@ -112,3 +112,30 @@ func printMeaningOfLifeGuard() {
     }
     print(name)
 }
+
+// PART 5 - OPTIONALS
+var myString:String? = nil
+
+if myString != nil {
+   print(myString!)  // Forced Unwrapping, we put ! at the end of the optional values
+} else {
+   print("myString has nil value")
+}
+
+var secondString:String? = "UTKU"
+
+if secondString != nil {
+   print(secondString!) // Forced Unwrapping, we put ! at the end of the optional values
+} else {
+   print("Secondstring has nil value")
+}
+// AUTOMATIC UNWRAPPING
+// usage of ! instead of ?, also no need for forced unwrapping
+var thirdString:String!
+thirdString = "Hello, Swift 4!"
+
+if thirdString != nil {
+   print(thirdString)
+} else {
+   print("thirdString has nil value")
+}
