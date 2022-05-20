@@ -24,5 +24,25 @@ print(person1)
 // call struct function
 person1.sayMyName()
 
+// PART 2-CLASS
+// additional to struct, classes offer inheritance
 
+class Plane {
+  var color: String
 
+  init(color:String) {
+    self.color = color
+  }
+}
+
+var plane1 = Plane(color: "Blue")
+
+var plane2 = plane1
+
+plane1.color = "Red"
+print(plane2.color)  // prints Red
+
+// object of Plane with custom initializer
+var plane3 = Plane(color: "Gradient Gray")
+
+print("Plane color: \(plane3.color)")
