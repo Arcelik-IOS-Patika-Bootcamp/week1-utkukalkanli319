@@ -81,3 +81,34 @@ enum Age : Int {
 // access raw value of python case
 var result = Age.young.rawValue
 print(result)
+
+// PART 4- IF GUARD
+// GUARD
+func isBiggerThanZero(x: Int) {
+    guard x > 0 else {
+        print("\(x) , Less than zero")
+        return
+    }
+    print("\(x) , Greater than zero")
+}
+isBiggerThanZero(x: -1)
+
+
+
+func getMeaningOfLife() -> Int? {
+    42
+}
+
+// IF LET
+func printMeaningOfLifeIf() {
+    if let name = getMeaningOfLife() {
+        print(name)
+    }
+}
+
+func printMeaningOfLifeGuard() {
+    guard let name = getMeaningOfLife() else {
+        return
+    }
+    print(name)
+}
