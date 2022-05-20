@@ -139,3 +139,36 @@ if thirdString != nil {
 } else {
    print("thirdString has nil value")
 }
+
+// PART 6 - LOOPING
+// access items of an array
+let languages = ["Swift", "Pascal", "Fortran", "Octave"]
+
+for language in languages {
+      print(language)
+}
+
+for language in languages where language != "Pascal"{
+  print(language)
+}
+
+// iterate from i = 1 to 1 = 3
+for i in 1...5 {
+    print(i)
+}
+
+for i in stride(from: 1, to: 10, by: 2) {
+    print(i)
+}
+// WHILE LOOP
+var loopy = 0
+print("while loop")
+while loopy < 10 {
+    print(loopy)
+    loopy += 1
+}
+
+
+// PART 7 - ACCESS IDENTIFIERS
+
+
