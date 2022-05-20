@@ -46,3 +46,38 @@ print(plane2.color)  // prints Red
 var plane3 = Plane(color: "Gradient Gray")
 
 print("Plane color: \(plane3.color)")
+
+// PART 3 - ENUM
+
+enum Season {
+  case spring, summer, autumn, winter
+}
+
+enum Days {
+  case monday, tuesday, wednesday, thursday, friday, saturday, sunday
+}
+
+
+var currentday = Days.monday
+
+print(currentday)
+
+// ITERATING OVER ENUMS
+// conform Languages to caseIterable
+enum Sizes: CaseIterable {
+  case small, medium, large
+}
+// for loop to iterate over all cases
+for currentSize in Sizes.allCases {
+  print(currentSize)
+}
+
+enum Age : Int {
+  case young = 10
+  case medium = 12
+  case old = 14
+}
+
+// access raw value of python case
+var result = Age.young.rawValue
+print(result)
